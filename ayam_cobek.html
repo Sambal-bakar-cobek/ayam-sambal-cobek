@@ -1,0 +1,58 @@
+import webbrowser
+
+with open("ayam_sambal_cobek.html", "w", encoding="utf-8") as f:
+    f.write("""
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayam Sambal Cobek - Pedas Mantap!</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
+        header { background-color: #d0342c; color: white; text-align: center; padding: 20px; }
+        nav { background-color: #333; color: white; padding: 10px; text-align: center; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; }
+        section { padding: 20px; max-width: 800px; margin: auto; }
+        footer { background-color: #333; color: white; text-align: center; padding: 10px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Selamat Datang di Ayam Sambal Cobek!</h1>
+        <p>Ayam goreng renyah dengan sambal cobek pedas khas.</p>
+    </header>
+
+    <nav>
+        <a href="#tentang">Tentang Kami</a>
+        <a href="#menu">Menu</a>
+        <a href="#kontak">Kontak</a>
+    </nav>
+
+    <section id="tentang">
+        <h2>Tentang Kami</h2>
+        <p>Kami menyajikan ayam sambal cobek autentik dengan bahan segar dan sambal cobek khas.</p>
+    </section>
+
+    <section id="menu">
+        <h2>Menu Unggulan</h2>
+        <ul>
+            <li><strong>Ayam Sambal Cobek:</strong> Rp 25.000</li>
+        </ul>
+        <p>Pesan via WhatsApp: 081315117887</p>
+    </section>
+
+    <section id="kontak">
+        <h2>Kontak Kami</h2>
+        <p>Alamat: JMGV+8H7, Sait Nihuta, Pangururan, Samosir Regency, North Sumatra 22392</p>
+        <p>Buka: 12.00 - 22.00 WIB</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Ayam Sambal Cobek. Semua hak dilindungi.</p>
+    </footer>
+</body>
+</html>
+""")
+
+webbrowser.open("ayam_sambal_cobek.html")
